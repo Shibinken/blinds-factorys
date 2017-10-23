@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blinds Factory</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Enriqueta:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="public.html">Public</a></li>
+				<li><a href="factory.html">Factory</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+	<div class="clearfix"></div>
+
+	<img class="logo" src="images/logo.png">
+
+	<div class="clearfix"></div>
+
+		<div class="banner-div">
+			<div class="tiles">
+				<div class="tile" data-scale="2" data-image="images/banner.jpg"></div>
+			</div>
+		</div>
+
+	<div class="clearfix"></div>
+
+	<section class="text-content">
+	<h2>Zebra blinds</h2>
+	<p>The latest in light filtering window treatments. It’s modern look adds a stylish functional effect to your 
+	living room, bedroom or office. While at the same time controlling the amount of light you want in the room.</p>
+	</section>
+	
+	<div class="clearfix"></div>
+
+	<section class="gallery">
+		<div class="col-sm-4 col-xs-4">
+			<div class="row gal-img">
+				<img src="images/gal1.jpg">
+				<div class="gal-overlay"></div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="row gal-img">
+				<img src="images/gal2.jpg">
+				<div class="gal-overlay"></div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="row gal-img">
+				<img src="images/gal3.jpg">
+				<div class="gal-overlay"></div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="clearfix"></div>
+	
+	<section class="text-content1">
+		<h3>Zebra blinds are gently filter natural light while still providing you privacy. It’s Modern look adds to your 
+		living room, bed room or office a stylish affect. It’s twin cell material delivers excellent insulation and privacy 
+		saving you energy costs while keeping your room cool and dry. The double cells trap air and repel the summer heat 
+		or winter cold, keeping you comfortable. . </h3>
+	</section>
+	
+	<div class="clearfix"></div>
+
+	<div class="banner-div2">
+		<div class="tiles">
+			<div class="tile" data-scale="2" data-image="images/banner2.jpg"></div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+	
+	<section class="text-content1 width-76">
+		<h3>These shades are made from high quality polyester fabric that won’t fray, treated to resist stains and have an 
+		anti-static finish to minimize dust build-up. The second strip colored backing assures you an uniform appearance from 
+		the street. When raised, they stack compactly, giving you a clear, unobstructed view</h3>
+	</section>
+	
+	</div>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<ul class="footer-menu">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="public.html">Public</a></li>
+				<li><a href="factory.html">Factory</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+
+  $('.tile')
+    // tile mouse actions
+    .on('click', function(){
+      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.photo').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+    // tiles set up
+    .each(function(){
+      $(this)
+        // add a photo container
+        .append('<div class="photo"></div>')
+        // set up a background image for each tile based on data-image attribute
+        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+    })
+
+</script>
+</body>
+</html>

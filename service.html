@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blinds Factory</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+	<link href="https://fonts.googleapis.com/css?family=Enriqueta:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="public.html">Public</a></li>
+				<li><a href="factory.html">Factory</a></li>
+				<li class="active"><a href="service.html">Service</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+	<div class="clearfix"></div>
+
+	<img class="logo" src="images/logo.png">
+
+	<div class="clearfix"></div>
+
+		<div class="inner-banner">
+			<img class="service-banner" src="images/service.jpg">
+		</div>
+
+	<div class="clearfix"></div>
+
+	<section class="gallery ser-gal">
+		<div class="col-sm-4 col-xs-4">
+			<div class="row gal-img">
+				<img src="images/s1.jpg">
+				<div class="gal-overlay"></div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="row gal-img">
+				<img src="images/s2.jpg">
+				<div class="gal-overlay"></div>
+			</div>
+		</div>
+		<div class="col-sm-4 col-xs-4">
+			<div class="row gal-img">
+				<img src="images/s3.jpg">
+				<div class="gal-overlay"></div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="clearfix"></div>
+	
+	<div class="ser-text">
+		<p class="ser-text-1">We are professional manufacturer of curtains, blinds and shutters since 1995. 
+		Such as roller blinds, honeycomb blinds, Shangri-la blinds, zebra blinds, wood blinds and different 
+		kinds of aluminum blade blinds.</p>
+		<p class="ser-text-2">With well equipped testing facilities and great technical team, our products 
+		are in a wide range, excellent quality, competitive prices and stylish designs.</p>
+		<p class="ser-text-3">These products are widely used in home, offices and other places.</p>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+	<div class="row pad-0">
+	<section class="gallery ser-mo">
+		<div class="col-sm-6 col-xs-6">
+			<div class="row gal-img">
+				<img src="images/m1.jpg">
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-6">
+			<div class="row gal-img">
+				<img src="images/m2.jpg">
+			</div>
+		</div>
+	</section>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+	<div class="ser-cont">
+		<p class="ser-cont1">Thanks for your time to read our products. We both sell fabric and finished blinds.<br>
+		Please feel free to contact with me with your size or request.</p>
+		<p class="ser-cont2">Contact:<br>Email: abil.tvr@gmail.com</p>
+		<p class="ser-cont3">Mobile/whatsapp/wechat: +919846400992</p>
+	</div>
+
+	</div>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<ul class="footer-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="public.html">Public</a></li>
+				<li><a href="factory.html">Factory</a></li>
+				<li class="active"><a href="service.html">Service</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+
+  $('.tile')
+    // tile mouse actions
+    .on('click', function(){
+      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
+    })
+    .on('mouseout', function(){
+      $(this).children('.photo').css({'transform': 'scale(1)'});
+    })
+    .on('mousemove', function(e){
+      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+    })
+    // tiles set up
+    .each(function(){
+      $(this)
+        // add a photo container
+        .append('<div class="photo"></div>')
+        // set up a background image for each tile based on data-image attribute
+        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
+    })
+
+</script>
+</body>
+</html>

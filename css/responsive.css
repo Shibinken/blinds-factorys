@@ -1,0 +1,303 @@
+@media only screen and (min-width: 767px){
+
+
+
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+
+
+
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+
+.logo {
+    margin: 22px auto;
+    width: 150px;
+}
+.banner-div{
+	position:relative;
+	width:100%;
+	height:435px;
+}
+.banner-div2{
+	position:relative;
+	width:100%;
+	height:330px;
+}
+.text-content{
+	width:70%;
+	margin:75px auto 50px;
+}
+.text-content h2{
+	font-size:21px;
+	line-height:21px;
+}
+.text-content1{
+	margin:50px auto 75px;
+}
+.tutorial h3{
+	margin-left:15px;
+}
+.tutorial-video{
+	width:720px;
+	height:470px;
+}
+.public-text ol{
+	margin-bottom:120px;
+}
+.pad-0{
+	margin-left:0px;
+	margin-right:0px;
+}
+.ser-gal{
+	margin:70px 0px 50px;
+}
+.ser-mo{
+	margin-bottom:50px;
+}
+.ser-cont1, .ser-cont2, .ser-cont3{
+	font-size:18px;
+	padding-left:15px;
+}
+.ser-text{
+	margin-bottom:50px;
+}
+.contact{
+	margin-bottom:20px;
+}
+.contact-form {
+    padding: 0px 40px 0px 50px;
+}
+.contact-form ul {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.pad-0 .col-md-6.col-sm-6.col-xs-12{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+}
+@media only screen and (max-width: 767px) and (min-width: 480px){
+
+.logo {
+    margin: 22px auto;
+    width: 150px;
+}
+.banner-div{
+	position:relative;
+	width:100%;
+	height:350px;
+}
+.banner-div2{
+	position:relative;
+	width:100%;
+	height:300px;
+}
+.text-content{
+	width:70%;
+	margin:50px auto 35px;
+}
+.text-content h2{
+	font-size:20px;
+	line-height:20px;
+}
+.text-content p{
+	font-size:17px;
+}
+.text-content1{
+	margin:35px auto 50px;
+}
+.text-content1 h3{
+	font-size:16px;
+	line-height:22px;
+	font-weight:600;
+}
+footer{
+	padding-left:15px;
+	padding-right:15px;
+}
+.public-text ul, .public-text ol, .public-text p{
+	padding-left:0px;
+}
+.public-text ol{
+	margin-bottom:80px;
+}
+.public-text h4{
+	margin-left:0px;
+	margin-top:10px;
+	width:100%;
+	float:left;
+}
+.public-text p{
+	margin-top:10px;
+	width:100%;
+	float:left;
+}
+.tutorial h3{
+	text-align:center;
+}
+.tutorial-video{
+	width:450px;
+	height:300px;
+}
+.pad-0{
+	margin-left:0px;
+	margin-right:0px;
+}
+.ser-gal{
+	margin:50px 0px 30px;
+}
+.ser-mo{
+	margin-bottom:30px;
+}
+.ser-cont1, .ser-cont2, .ser-cont3{
+	font-size:17px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.ser-text{
+	margin-bottom:30px;
+}
+.cont-text3, .contact-form, .contact-form ul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.contact-form {
+    padding: 0px 20px 0px 20px;
+	text-align:center;
+	margin-top:0px;
+}
+.contact-form ul {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.contact{
+	margin-bottom:20px;
+}
+.contact-form form{
+	width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.carousel-control {
+    width: 30px;
+	height: 70px;
+}
+
+}
+@media only screen and (max-width: 480px){
+
+.logo {
+    margin: 22px auto;
+    width: 150px;
+}	
+.banner-div{
+	position:relative;
+	width:100%;
+	height:220px;
+}
+.banner-div2{
+	position:relative;
+	width:100%;
+	height:175px;
+}
+.gallery .col-sm-4.col-xs-4, .gallery .col-sm-6.col-xs-6{
+	width:100%;
+}
+.text-content{
+	width:85%;
+	margin:40px auto 28px;
+}
+.text-content h2{
+	font-size:18px;
+	line-height:18px;
+}
+.text-content p{
+	font-size:16px;
+}
+.text-content1{
+	margin:28px auto 40px;
+}
+.text-content1 h3{
+	font-size:16px;
+	line-height:22px;
+	font-weight:600;
+}
+footer{
+	padding-left:15px;
+	padding-right:15px;
+}
+.footer-menu li a{
+	margin-right:0px;
+}
+.public-text ul, .public-text ol, .public-text p{
+	padding-left:0px;
+}
+.public-text ol{
+	margin-bottom:80px;
+}
+.public-text h4{
+	margin-left:0px;
+	margin-top:10px;
+	width:100%;
+	float:left;
+}
+.public-text p{
+	margin-top:10px;
+	width:100%;
+	float:left;
+}
+.tutorial h3{
+	text-align:center;
+}
+.tutorial-video{
+	width:320px;
+	height:210px;
+}
+.pad-0{
+	margin-left:0px;
+	margin-right:0px;
+}
+.ser-gal{
+	margin:40px 0px 30px;
+}
+.ser-mo{
+	margin-bottom:30px;
+}
+.ser-cont1, .ser-cont2, .ser-cont3{
+	font-size:16px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.ser-text{
+	margin-bottom:30px;
+}
+.cont-text3, .contact-form, .contact-form ul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.contact-form {
+    padding: 0px 20px 0px 20px;
+	text-align:center;
+	margin-top:0px;
+}
+.contact-form ul {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.contact{
+	margin-bottom:20px;
+}
+.carousel-control {
+    width: 30px;
+	height: 70px;
+}
+
+
+}
+@media only screen and (max-width: 650px){
+
+
+
+}
